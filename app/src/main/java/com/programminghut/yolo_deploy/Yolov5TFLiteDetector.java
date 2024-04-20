@@ -46,14 +46,14 @@ import android.graphics.RectF;
 
 public class Yolov5TFLiteDetector {
 
-    private final Size INPNUT_SIZE = new Size(320, 320);
-    private final int[] OUTPUT_SIZE = new int[]{1, 6300, 85};
+    private final Size INPNUT_SIZE = new Size(640, 640);
+    private final int[] OUTPUT_SIZE = new int[]{1, 25200, 6};
     private Boolean IS_INT8 = false;
     private final float DETECT_THRESHOLD = 0.25f;
     private final float IOU_THRESHOLD = 0.45f;
     private final float IOU_CLASS_DUPLICATED_THRESHOLD = 0.7f;
 
-    private final String LABEL_FILE = "coco_label.txt";
+    private final String LABEL_FILE = "labels.txt";
 
     private int BITMAP_HEIGHT;
     private int BITMAP_WIDTH;
